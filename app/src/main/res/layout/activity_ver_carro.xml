@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/background1"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".view.carro.VerCarro">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:text="Informações do Veiculo"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/verIdCarro"
+        android:textSize="14dp"
+        android:textColor="#000"
+        android:layout_marginVertical="15dp"
+        android:text="ID: " />
+
+    <TextView
+        android:id="@+id/verMarcaCarro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:text="Marca: "
+        android:textColor="#000"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/verModeloCarro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:text="Modelo: "
+        android:textColor="#000"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/verVelocidadeCarro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:text="Kilometragem Total:  "
+        android:textColor="#000000"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#201E23"
+            android:textColor="#FFFFFF"
+            android:onClick="editarCarro"
+            android:text="Editar" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#201E23"
+            android:textColor="#FFFFFF"
+            android:onClick="removerCarro"
+            android:text="Remover" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#201E23"
+        android:textColor="#FFFFFF"
+        android:onClick="novaCarro"
+        android:text="Novo Carro" />
+
+</LinearLayout>

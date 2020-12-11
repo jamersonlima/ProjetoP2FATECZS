@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background = "@drawable/background"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".view.Login">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:text="Jamex Car "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#884545"
+            android:textSize="18pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="14pt" />
+
+        <EditText
+            android:id="@+id/loginTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FDFBFB"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senha"
+            android:textColor="#FFFFFF"
+            android:textSize="14pt" />
+
+        <EditText
+            android:id="@+id/senhaTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FAF4F4"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#201E23"
+                android:onClick="logar"
+                android:text="Acessar"
+                android:textColor="#FBF9F9" />
+
+            <Button
+                android:id="@+id/cadastroBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#201E23"
+                android:onClick="telaCadastro"
+                android:text="Cadastrar"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_marginVertical="5dp"
+    android:background = "@drawable/background1"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/idCarroLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID: "
+        android:textColor="#000"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/marcaCarroLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marca:"
+        android:textColor="#000"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/modeloCarroLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modelo:"
+        android:textColor="#000"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/velocidadeCarroLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Kilometragem Total:"
+        android:textColor="#000"
+        android:textSize="14dp" />
+
+</LinearLayout>
